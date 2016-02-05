@@ -1,0 +1,27 @@
+{
+  "name": "slideshare-slides",
+  "version": "1.0.0",
+  "authors": [
+    "István Koren <http://istvank.eu>"
+  ],
+  "description": "An element showing a SlideShare slideset.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "seed"
+  ],
+  "main": "slideshare-slides.html",
+  "license": "MIT",
+  "homepage": "https://github.com/istvank/slideshare-slides/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^4.0.0"
+  }
+}
