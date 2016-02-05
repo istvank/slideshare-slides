@@ -1,0 +1,7 @@
+bower_components
+.tmp
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/
