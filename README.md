@@ -8,6 +8,8 @@ An element showing a SlideShare slideset. Embedding a SlideShare presentation ge
 ...where `id` is the id you get through the WordPress embed code after clicking "Share" below any slideshow on
 slideshare.net. 
 
+**Disclaimer:** This piece of software is not developed or supported by SlideShare or LinkedIn. It is developed
+independently by the community, however it may use libraries or depend on functionalities provided by SlideShare.
 
 ## Dependencies
 
