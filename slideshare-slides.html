@@ -55,15 +55,10 @@ Example:
         <style>
             :host {
                 display: block;
-                box-sizing: border-box;
-                width: 597px;
-                height: 487px;
             }
         </style>
 
         <iframe id="slideshareFrame"
-                width="595"
-                height="485"
                 frameborder="0"
                 marginwidth="0"
                 marginheight="0"
@@ -83,8 +78,25 @@ Example:
                  */
                 slidesId: {
                     type: String,
-                    reflectToAttribute: true,
                     observer: '_slidesIdChanged'
+                },
+
+                /**
+                 * Sets the width of the slideset.
+                 * Accepts CSS pixel strings, e.g. '595px'.
+                 */
+                width: {
+                    type: String,
+                    value: '595px'
+                },
+
+                /**
+                 * Sets the height of the slideset.
+                 * Accepts CSS pixel strings, e.g. '485px'.
+                 */
+                height: {
+                    type: String,
+                    value: '485px'
                 },
 
                 /**
@@ -114,6 +126,9 @@ Example:
                 // This is a good place to perform any work related to your element's
                 // visual state or active behavior (measuring sizes, beginning animations,
                 // loading resources, etc).
+
+                this.$.slideshareFrame.style['width'] = this.width;
+                this.$.slideshareFrame.style['height'] = this.height;
             },
 
             detached: function() {
